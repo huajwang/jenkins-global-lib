@@ -60,7 +60,9 @@ def call(String goToolName = 'go-1.12') {
 				body: 'This is a test'
 			}
 			success {
-
+				mail to: 'cse63152@gmail.com',
+				subject: 'Test is done!',
+				body: 'This is a test of a shared library'
 			}
 
 		}
