@@ -8,7 +8,7 @@ class CommonUtils implements Serializable {
 
 	def steps
 
-	Gradle(steps) {
+	CommonUtils(steps) {
 		this.steps = steps
 	}
 
