@@ -3,7 +3,7 @@ package com.longmaple.jenkins
 import org.apache.commons.lang3.SystemUtils
 
 
-@Grab('org.apache.commons:commons-lang3:3.8.1')
+@Grab('org.apache.commons:commons-lang3:3.12.0')
 class CommonUtils implements Serializable {
 
 	def steps
