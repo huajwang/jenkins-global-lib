@@ -9,9 +9,8 @@ class CommonUtils implements Serializable {
 		this.steps = steps
 	}
 
-	def runPy(String scriptPath, def args) {
-		String script = libraryResource(scriptPath)
+	def runPy(String args) {
 		String argsString = args.join(' ')
-		steps.bat "python ${script} ${argsString}"
+		steps.bat "python ../../scripts/jenkins.py ${argsString}"
 	}
 }
