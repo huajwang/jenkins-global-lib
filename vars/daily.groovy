@@ -21,7 +21,7 @@ def call(String mavenToolName = 'apache-maven-3.8.2') {
 
 			stage('Run python') {
 				steps {
-					bat "python ../../scripts/jenkins.py"
+					bat "python ../../scripts/jenkins.py --find foo"
 				}
 			}
 
