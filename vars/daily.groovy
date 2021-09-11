@@ -19,6 +19,12 @@ def call(String mavenToolName = 'apache-maven-3.8.2') {
 				}
 			}
 
+			stage('Run python') {
+				steps {
+					bat "python jenkins.py"
+				}
+			}
+
 		}
 
 	}
