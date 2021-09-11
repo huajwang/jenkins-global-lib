@@ -9,7 +9,7 @@ class CommonUtils implements Serializable {
 		this.steps = steps
 	}
 
-	def runPy(String args) {
+	def runPy(String... args) {
 		String argsString = args.join(' ')
 		steps.bat "python ../../scripts/jenkins.py ${argsString}"
 	}
